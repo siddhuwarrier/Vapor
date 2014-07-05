@@ -33,10 +33,8 @@
         </section>
         
         <section class="comment">
-            <div class="g-comments" data-href="{{@blog.url}}{{url}}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</div>
             <div id="fb-root"></div>
             <div class="fb-comments" data-href="{{@blog.url}}{{url}}" data-width="470"></div>
-            <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
             <script>
                 (function(d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
@@ -46,7 +44,6 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
             </script>
-            <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a></noscript>
         </section>
 
         <footer class="post-footer">
