@@ -5,7 +5,9 @@
     <article class="{{post_class}}">
 
         {{#post}}
-
+        <head>
+            <meta property="og:description" content="{{content preview}}" />
+        </head>
 
         <header>
         {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
