@@ -16,6 +16,10 @@
 
     {{#if pagination.next}}<link href="{{pageUrl pagination.next}}" rel="prefetch" />{{/if}}
 
+    {{#if post}}
+        <meta property="og:description" content="{{post.title}}" />
+    {{/if}}
+
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
