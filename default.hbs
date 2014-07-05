@@ -16,13 +16,10 @@
 
     {{#if pagination.next}}<link href="{{pageUrl pagination.next}}" rel="prefetch" />{{/if}}
 
-    {{#if post}}
-        <meta property="og:title" content="{{post.title}}" />
-        <meta property="og:description" content="{{content preview}}" />
-        <meta property="og:type" content="article">
-    {{/if}}
-
     {{ghost_head}}
+    <meta property="og:title" content="{{post.title}}" />
+    <meta property="og:description" content="{{content preview}}" />
+    <meta property="og:type" content="article">
 </head>
 <body class="{{body_class}}">
 
