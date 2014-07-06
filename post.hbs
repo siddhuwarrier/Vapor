@@ -6,9 +6,10 @@
 
         {{#post}}
 
-        {{#contentFor "metaOg"}}
+        {{#contentFor "metaTags"}}
             <meta property="og:title" content="{{post.title}}" />
-            <meta property="og:description" content="{{content}}" />
+            <meta property="og:url" content="{{url absolute="true"}}"/>
+            <meta property="article:author" content="{{author.website}}">
             <meta property="og:type" content="article">
         {{/contentFor}}
 

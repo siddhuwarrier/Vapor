@@ -18,14 +18,7 @@
 
     {{ghost_head}}
 
-    {{{block "pageScripts"}}}
-    {{#if post}}
-        <meta property="og:title" content="{{post.title}}" />
-        <meta property="og:description" content="{{post.content}}" />
-        <meta property="og:type" content="article">
-    {{else}}
-        <meta property="og:description" content="{{@blog.description}}"/>
-    {{/if}}
+    {{{block "metaTags"}}}
 
 </head>
 <body class="{{body_class}}">
