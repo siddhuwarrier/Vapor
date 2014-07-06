@@ -5,10 +5,12 @@
     <article class="{{post_class}}">
 
         {{#post}}
-        <head>
-            <meta property="og:description" content="{{content preview}}" />
-        </head>
 
+        {{#contentFor "metaOg"}}
+            <meta property="og:title" content="{{post.title}}" />
+            <meta property="og:description" content="{{post.content}}" />
+            <meta property="og:type" content="article">
+        {{/contentFor}}
 
         <header>
         {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
